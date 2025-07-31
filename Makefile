@@ -1,7 +1,8 @@
 SRC=main.c
 CC=gcc
 PROG=breakout
+CFLAGS = -g
 LDFLAGS= -lraylib -lm
 
 $(PROG): $(SRC)
-	$(CC) $(SRC) -o $(PROG) $(LDFLAGS)
+	$(CC) $(CFLAGS) $(SRC) -o $(PROG) $(LDFLAGS)
